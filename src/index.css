@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-slate-50 text-slate-800 antialiased;
+    font-family:
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+  }
+}
+
+@layer utilities {
+  .weather-card {
+    @apply bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden;
+  }
+
+  .weather-card:hover {
+    @apply shadow-xl;
+    transform: translateY(-4px);
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl transition-all;
+  }
+
+  .btn-primary:hover {
+    @apply bg-blue-700;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-slate-800 tracking-tight;
+  }
+}
